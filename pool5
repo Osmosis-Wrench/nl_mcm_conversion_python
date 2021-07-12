@@ -1,0 +1,13 @@
+	If (Option == SetDomLightMode)
+		Main.DomLightPos = Index
+		SetMenuOptionValue(SetDomLightMode, DomLightModeList[Index])
+	ElseIf (Option == SetSubLightMode)
+		Main.SubLightPos = Index
+		SetMenuOptionValue(Option, SubLightModeList[Index])
+	ElseIf (Option == SetDomLightBrightness)
+		Main.DomLightBrightness = Index
+		SetMenuOptionValue(Option, DomLightBrightList[Index])
+	ElseIf (Option == SetSubLightBrightness)
+		Main.SubLightBrightness = Index
+		SetMenuOptionValue(Option, SubLightBrightList[Index])
+	EndIf

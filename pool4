@@ -1,0 +1,11 @@
+	If (Option == SetDomLightMode)
+		SetMenuDialogOptions(DomLightModeList)
+		;SetMenuDialogStartIndex(DifficultyIndex)
+		;SetMenuDialogDefaultIndex(1)
+	ElseIf (Option == SetSubLightMode)
+		SetMenuDialogOptions(SubLightModeList)
+	ElseIf (Option == SetDomLightBrightness)
+		SetMenuDialogOptions(DomLightBrightList)
+	ElseIf (Option == SetSubLightBrightness)
+		SetMenuDialogOptions(SubLightBrightList)
+	EndIf

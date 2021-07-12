@@ -1,0 +1,137 @@
+If (Option == SetEndOnOrgasm)
+		Main.EndOnDomOrgasm = !Main.EndOnDomOrgasm
+		SetToggleOptionValue(SetEndOnOrgasm, Main.EndOnDomOrgasm)
+	ElseIf (Option == SetEndOnSubOrgasm)
+		Main.EndOnSubOrgasm = !Main.EndOnSubOrgasm
+		SetToggleOptionValue(SetEndOnSubOrgasm, Main.EndOnSubOrgasm)
+	ElseIf (Option == SetEndOnBothOrgasm)
+		Main.RequireBothOrgasmsToFinish = !Main.RequireBothOrgasmsToFinish
+		SetToggleOptionValue(SetEndOnBothOrgasm, Main.RequireBothOrgasmsToFinish)
+	ElseIf (Option == SetResetState)
+		Main.ResetState()
+	ElseIf (Option == SetUpdate)
+		Debug.MessageBox("Close all menus now")
+		OStimUpdaterScript oupdater = Game.GetFormFromFile(0x000D67, "Ostim.esp") as OStimUpdaterScript
+		oupdater.DoUpdate()
+	ElseIf (Option == SetRebuildDatabase)
+		Debug.MessageBox("Close all menus and watch the console until it is done")
+		Main.GetODatabase().InitDatabase()
+	ElseIf (Option == SetActorSpeedControl)
+		Main.EnableActorSpeedControl = !Main.EnableActorSpeedControl
+		SetToggleOptionValue(Option, Main.EnableActorSpeedControl)
+	ElseIf (Option == SetResetPosition)
+		Main.ResetPosAfterSceneEnd = !Main.ResetPosAfterSceneEnd
+		SetToggleOptionValue(Option, Main.ResetPosAfterSceneEnd)
+	ElseIf (Option == SetEnableBeds)
+		Main.UseBed = !Main.UseBed
+		SetToggleOptionValue(Option, Main.UseBed)
+	ElseIf (Option == SetScaling)
+		Main.DisableScaling = !Main.DisableScaling
+		SetToggleOptionValue(Option, Main.DisableScaling)
+	ElseIf (Option == SetUseRumble)
+		Main.UseRumble = !Main.UseRumble
+		SetToggleOptionValue(Option, Main.UseRumble)
+	ElseIf (Option == SetFlipFix)
+		Main.FixFlippedAnimations = !Main.FixFlippedAnimations
+		SetToggleOptionValue(Option, Main.FixFlippedAnimations)
+	ElseIf (Option == SetUseScreenShake)
+		Main.UseScreenShake = !Main.UseScreenShake
+		SetToggleOptionValue(Option, Main.UseScreenShake)
+	ElseIf (Option == SetForceAIInConsensualScenes)
+		Main.UseAINonAggressive = !Main.UseAINonAggressive
+		SetToggleOptionValue(Option, Main.UseAINonAggressive)
+	ElseIf (Option == SetDropClothes)
+		Main.TossClothesOntoGround = !Main.TossClothesOntoGround
+		SetToggleOptionValue(Option, Main.TossClothesOntoGround)
+	ElseIf (Option == SetForceAIIfAttacked)
+		Main.UseAIPlayerAggressed = !Main.UseAIPlayerAggressed
+		SetToggleOptionValue(Option, Main.UseAIPlayerAggressed)
+	ElseIf (Option == SetForceFirstPerson)
+		Main.ForceFirstPersonAfter = !Main.ForceFirstPersonAfter
+		SetToggleOptionValue(Option, Main.ForceFirstPersonAfter)
+	ElseIf (Option == SetUseAutoFades)
+		Main.UseAutoFades = !Main.UseAutoFades
+		SetToggleOptionValue(Option, Main.UseAutoFades)
+	ElseIf (Option == SetMatchColorToGender)
+		Main.MatchBarColorToGender = !Main.MatchBarColorToGender
+		SetToggleOptionValue(Option, Main.MatchBarColorToGender)
+	ElseIf (Option == SetHideNPCOnNPCBars)
+		Main.HideBarsInNPCScenes = !Main.HideBarsInNPCScenes
+		SetToggleOptionValue(Option, Main.HideBarsInNPCScenes)
+	ElseIf (Option == SetMute)
+		Main.MuteOSA = !Main.MuteOSA
+		SetToggleOptionValue(Option, Main.MuteOSA)
+	ElseIf (Option == SetEndAfterActorHit)
+		Main.EndAfterActorHit = !Main.EndAfterActorHit
+		SetToggleOptionValue(Option, Main.EndAfterActorHit)
+	ElseIf (Option == SetUseFreeCam)
+		Main.UseFreeCam = !Main.UseFreeCam
+		SetToggleOptionValue(Option, Main.UseFreeCam)
+	ElseIf (Option == SetForceAIIfAttacking)
+		Main.UseAIPlayerAggressor = !Main.UseAIPlayerAggressor
+		SetToggleOptionValue(Option, Main.UseAIPlayerAggressor)
+	ElseIf (Option == SetUndressIfneed)
+		Main.AutoUndressIfNeeded = !Main.AutoUndressIfNeeded
+		SetToggleOptionValue(Option, Main.AutoUndressIfNeeded)
+	ElseIf (Option == SetBedAlgo)
+		Main.UseAlternateBedSearch = !Main.UseAlternateBedSearch
+		SetToggleOptionValue(Option, Main.UseAlternateBedSearch)
+	ElseIf (Option == SetClipinglessFirstPerson)
+		Main.EnableImprovedCamSupport = !Main.EnableImprovedCamSupport
+		SetToggleOptionValue(Option, Main.EnableImprovedCamSupport)
+	ElseIf (Option == SetAlwaysUndressAtStart)
+		Main.AlwaysUndressAtAnimStart = !Main.AlwaysUndressAtAnimStart
+		SetToggleOptionValue(Option, Main.AlwaysUndressAtAnimStart)
+	ElseIf (Option == SetAIControl)
+		Main.UseAIControl = !Main.UseAIControl
+		SetToggleOptionValue(Option, Main.UseAIControl)
+	ElseIf (Option == SetDomBar)
+		Main.EnableDomBar = !Main.EnableDomBar
+		SetToggleOptionValue(Option, Main.EnableDomBar)
+	ElseIf (Option == SetThirdBar)
+		Main.EnableThirdBar = !Main.EnableThirdBar
+		SetToggleOptionValue(Option, Main.EnableThirdBar)
+	ElseIf (Option == SetAnimateRedress)
+		Main.FullyAnimateRedress = !Main.FullyAnimateRedress
+		SetToggleOptionValue(Option, Main.FullyAnimateRedress)
+	ElseIf (Option == SetMisallignmentOption)
+		Main.MisallignmentProtection = !Main.MisallignmentProtection
+		SetToggleOptionValue(Option, Main.MisallignmentProtection)
+	ElseIf (Option == SetSubBar)
+		Main.EnableSubBar = !Main.EnableSubBar
+		SetToggleOptionValue(Option, Main.EnableSubBar)
+	ElseIf (Option == SetAutoHideBar)
+		Main.AutoHideBars = !Main.AutoHideBars
+		SetToggleOptionValue(Option, Main.AutoHideBars)
+	ElseIf (Option == SetSlowMoOrgasms)
+		Main.SlowMoOnOrgasm = !Main.SlowMoOnOrgasm
+		SetToggleOptionValue(Option, Main.SlowMoOnOrgasm)
+	ElseIf (Option == SetOrgasmBoostsRel)
+		Main.OrgasmIncreasesRelationship = !Main.OrgasmIncreasesRelationship
+		SetToggleOptionValue(Option, Main.OrgasmIncreasesRelationship)
+	ElseIf (Option == SetUseFades)
+		Main.UseFades = !Main.UseFades
+		SetToggleOptionValue(Option, Main.UseFades)
+	ElseIf (Option == SetOnlyLightInDark)
+		Main.LowLightLevelLightsOnly = !Main.LowLightLevelLightsOnly
+		SetToggleOptionValue(Option, Main.LowLightLevelLightsOnly)
+	ElseIf (Option == setPlayerAlwaysSubStraight)
+		Main.PlayerAlwaysSubStraight = !Main.PlayerAlwaysSubStraight
+		SetToggleOptionValue(Option, Main.PlayerAlwaysSubStraight)
+	ElseIf (Option == SetPlayerAlwaysSubGay)
+		Main.PlayerAlwaysSubGay = !Main.PlayerAlwaysSubGay
+		SetToggleOptionValue(Option, Main.PlayerAlwaysSubGay)
+	ElseIf (Option == SetPlayerAlwaysDomStraight)
+		Main.PlayerAlwaysDomStraight = !Main.PlayerAlwaysDomStraight
+		SetToggleOptionValue(Option, Main.PlayerAlwaysDomStraight)
+	ElseIf (Option == SetPlayerAlwaysDomGay)
+		Main.PlayerAlwaysDomGay = !Main.PlayerAlwaysDomGay
+		SetToggleOptionValue(Option, Main.PlayerAlwaysDomGay)
+	ElseIf (Option == SetOnlyGayAnimsInGayScenes)
+		Main.OnlyGayAnimsInGayScenes = !Main.OnlyGayAnimsInGayScenes
+		SetToggleOptionValue(Option, Main.OnlyGayAnimsInGayScenes)
+	ElseIf (Option == ExportSettings)
+		ExportSettings()
+	elseIf (Option == ImportSettings)
+		ImportSettings()
+	EndIf
