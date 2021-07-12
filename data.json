@@ -421,7 +421,7 @@
         "statename": "setUndressIfneed",
         "AddOption": "AddToggleOption(\"Remove clothes mid-scene\", Main.AutoUndressIfNeeded)",
         "OnOptionSelect": "Main.AutoUndressIfNeeded = !Main.AutoUndressIfNeeded\n        SetToggleOptionValueST(Main.AutoUndressIfNeeded, False, \"setUndressIfneed\")\n",
-        "OnOptionHighlight": "",
+        "OnOptionHighlight": "SetInfoText(\"If actors' genitals are covered by clothes, this will auto-remove the clothes as soon as they need access to their genitals\")\n",
         "OnOptionMenuOpen": "",
         "OnOptionMenuAccept": "",
         "OnOptionSliderOpen": "",

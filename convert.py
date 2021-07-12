@@ -86,7 +86,7 @@ def getdatafromkey(data, key, field):
 def buildEvent(event, code):
     if event == "OnMenuAcceptST":
         statepart = "String state_id, int index"
-    if event == "OnSliderAcceptST":
+    elif event == "OnSliderAcceptST":
         statepart = "String state_id, float value"
     else:
         statepart = "String state_id"

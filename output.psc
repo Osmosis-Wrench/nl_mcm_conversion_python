@@ -520,7 +520,8 @@ state setUndressIfneed
     endEvent
 
     Event OnHighlightST(String state_id)
-        False    endEvent
+        SetInfoText("If actors' genitals are covered by clothes, this will auto-remove the clothes as soon as they need access to their genitals")
+    endEvent
 endstate
 
 state setDropClothes
@@ -683,9 +684,101 @@ state setCameraSpeed
     endEvent
 endstate
 
+state setCameraSpeed
+    Event OnSliderOpenST(String state_id)
+        SetSliderDialogStartValue(Main.FreecamSpeed)
+        SetSliderDialogDefaultValue(3.0)
+        SetSliderDialogRange(1, 20)
+        SetSliderDialogInterval(1)
+    endEvent
+
+    Event OnSliderAcceptST(String state_id, float value)
+        Main.FreecamSpeed = (Value as Int)
+        SetSliderOptionValueST(Value, "{0}")
+    endEvent
+
+    Event OnHighlightST(String state_id)
+        SetInfoText("The speed of the freecam")
+    endEvent
+endstate
+
+state setCameraSpeed
+    Event OnSliderOpenST(String state_id)
+        SetSliderDialogStartValue(Main.FreecamSpeed)
+        SetSliderDialogDefaultValue(3.0)
+        SetSliderDialogRange(1, 20)
+        SetSliderDialogInterval(1)
+    endEvent
+
+    Event OnSliderAcceptST(String state_id, float value)
+        Main.FreecamSpeed = (Value as Int)
+        SetSliderOptionValueST(Value, "{0}")
+    endEvent
+
+    Event OnHighlightST(String state_id)
+        SetInfoText("The speed of the freecam")
+    endEvent
+endstate
+
+state setCameraSpeed
+    Event OnSliderOpenST(String state_id)
+        SetSliderDialogStartValue(Main.FreecamSpeed)
+        SetSliderDialogDefaultValue(3.0)
+        SetSliderDialogRange(1, 20)
+        SetSliderDialogInterval(1)
+    endEvent
+
+    Event OnSliderAcceptST(String state_id, float value)
+        Main.FreecamSpeed = (Value as Int)
+        SetSliderOptionValueST(Value, "{0}")
+    endEvent
+
+    Event OnHighlightST(String state_id)
+        SetInfoText("The speed of the freecam")
+    endEvent
+endstate
+
+state setCameraSpeed
+    Event OnSliderOpenST(String state_id)
+        SetSliderDialogStartValue(Main.FreecamSpeed)
+        SetSliderDialogDefaultValue(3.0)
+        SetSliderDialogRange(1, 20)
+        SetSliderDialogInterval(1)
+    endEvent
+
+    Event OnSliderAcceptST(String state_id, float value)
+        Main.FreecamSpeed = (Value as Int)
+        SetSliderOptionValueST(Value, "{0}")
+    endEvent
+
+    Event OnHighlightST(String state_id)
+        SetInfoText("The speed of the freecam")
+    endEvent
+endstate
+
+state setCameraSpeed
+    Event OnSliderOpenST(String state_id)
+        SetSliderDialogStartValue(Main.FreecamSpeed)
+        SetSliderDialogDefaultValue(3.0)
+        SetSliderDialogRange(1, 20)
+        SetSliderDialogInterval(1)
+    endEvent
+
+    Event OnSliderAcceptST(String state_id, float value)
+        Main.FreecamSpeed = (Value as Int)
+        SetSliderOptionValueST(Value, "{0}")
+    endEvent
+
+    Event OnHighlightST(String state_id)
+        SetInfoText("The speed of the freecam")
+    endEvent
+endstate
+
 state setDomLightMode
     Event OnMenuOpenST(String state_id)
         SetMenuDialogOptions(DomLightModeList)
+        ;SetMenuDialogStartIndex(DifficultyIndex)
+        ;SetMenuDialogDefaultIndex(1)
     endEvent
 
     Event OnMenuAcceptST(String state_id)
