@@ -40,7 +40,7 @@
         "OnOptionMenuOpen": "",
         "OnOptionMenuAccept": "",
         "OnOptionSliderOpen": "SetSliderDialogStartValue(Main.CustomTimescale)\n        SetSliderDialogDefaultValue(0.0)\n        SetSliderDialogRange(0, 40)\n        SetSliderDialogInterval(1)\n",
-        "OnOptionSliderAccept": "Main.CustomTimescale = (Value as Int)\n        SetSliderOptionValue(Option, Value, \"{0}\")\n",
+        "OnOptionSliderAccept": "Main.CustomTimescale = (Value as Int)\n        SetSliderOptionValueST(Value, \"{0}\")\n",
         "OnOptionKeyMapChange": ""
     },
     "setMisallignmentOption": {
@@ -271,7 +271,7 @@
         "OnOptionMenuOpen": "",
         "OnOptionMenuAccept": "",
         "OnOptionSliderOpen": "SetSliderDialogStartValue(Main.BedSearchDistance)\n        SetSliderDialogDefaultValue(15.0)\n        SetSliderDialogRange(1, 30)\n        SetSliderDialogInterval(1)\n",
-        "OnOptionSliderAccept": "Main.BedSearchDistance = (Value as Int)\n        SetSliderOptionValue(Option, Value, \"{0} meters\")\n",
+        "OnOptionSliderAccept": "Main.BedSearchDistance = (Value as Int)\n        SetSliderOptionValueST(Value, \"{0} meters\")\n",
         "OnOptionKeyMapChange": ""
     },
     "setBedReallignment": {
@@ -282,7 +282,7 @@
         "OnOptionMenuOpen": "",
         "OnOptionMenuAccept": "",
         "OnOptionSliderOpen": "SetSliderDialogStartValue(Main.BedReallignment)\n        SetSliderDialogDefaultValue(0.0)\n        SetSliderDialogRange(-250, 250)\n        SetSliderDialogInterval(1)\n",
-        "OnOptionSliderAccept": "Main.BedReallignment = (Value as Int)\n        SetSliderOptionValue(Option, Value, \"{0} units\")\n",
+        "OnOptionSliderAccept": "Main.BedReallignment = (Value as Int)\n        SetSliderOptionValueST(Value, \"{0} units\")\n",
         "OnOptionKeyMapChange": ""
     },
     "setBedAlgo": {
@@ -513,7 +513,7 @@
         "OnOptionMenuOpen": "",
         "OnOptionMenuAccept": "",
         "OnOptionSliderOpen": "SetSliderDialogStartValue(Main.AiSwitchChance)\n        SetSliderDialogDefaultValue(6.0)\n        SetSliderDialogRange(0, 100)\n        SetSliderDialogInterval(1)\n",
-        "OnOptionSliderAccept": "Main.AiSwitchChance = (Value as Int)\n        SetSliderOptionValue(Option, Value, \"{0}\")\n",
+        "OnOptionSliderAccept": "Main.AiSwitchChance = (Value as Int)\n        SetSliderOptionValueST(Value, \"{0}\")\n",
         "OnOptionKeyMapChange": ""
     },
     "setUseFreeCam": {
@@ -535,7 +535,7 @@
         "OnOptionMenuOpen": "",
         "OnOptionMenuAccept": "",
         "OnOptionSliderOpen": "SetSliderDialogStartValue(Main.FreecamFOV)\n        SetSliderDialogDefaultValue(45.0)\n        SetSliderDialogRange(1, 120)\n        SetSliderDialogInterval(1)\n",
-        "OnOptionSliderAccept": "Main.FreecamFOV = (Value as Int)\n        SetSliderOptionValue(Option, Value, \"{0}\")\n",
+        "OnOptionSliderAccept": "Main.FreecamFOV = (Value as Int)\n        SetSliderOptionValueST(Value, \"{0}\")\n",
         "OnOptionKeyMapChange": ""
     },
     "setDefaultFOV": {
@@ -546,7 +546,7 @@
         "OnOptionMenuOpen": "",
         "OnOptionMenuAccept": "",
         "OnOptionSliderOpen": "SetSliderDialogStartValue(Main.DefaultFOV)\n        SetSliderDialogDefaultValue(85.0)\n        SetSliderDialogRange(1, 120)\n        SetSliderDialogInterval(1)\n",
-        "OnOptionSliderAccept": "Main.DefaultFOV = (Value as Int)\n        SetSliderOptionValue(Option, Value, \"{0}\")\n",
+        "OnOptionSliderAccept": "Main.DefaultFOV = (Value as Int)\n        SetSliderOptionValueST(Value, \"{0}\")\n",
         "OnOptionKeyMapChange": ""
     },
     "setCameraSpeed": {
@@ -557,7 +557,7 @@
         "OnOptionMenuOpen": "",
         "OnOptionMenuAccept": "",
         "OnOptionSliderOpen": "SetSliderDialogStartValue(Main.FreecamSpeed)\n        SetSliderDialogDefaultValue(3.0)\n        SetSliderDialogRange(1, 20)\n        SetSliderDialogInterval(1)\n",
-        "OnOptionSliderAccept": "Main.FreecamSpeed = (Value as Int)\n        SetSliderOptionValue(Option, Value, \"{0}\")\n",
+        "OnOptionSliderAccept": "Main.FreecamSpeed = (Value as Int)\n        SetSliderOptionValueST(Value, \"{0}\")\n",
         "OnOptionKeyMapChange": ""
     },
     "setKeymap": {
@@ -632,7 +632,7 @@
         "OnOptionSelect": "",
         "OnOptionHighlight": "SetInfoText(\"Enable light on second actor at animation start\")\n",
         "OnOptionMenuOpen": "SetMenuDialogOptions(SubLightModeList)\n",
-        "OnOptionMenuAccept": "Main.SubLightPos = Index\n        SetMenuOptionValue(Option, SubLightModeList[Index])\n",
+        "OnOptionMenuAccept": "Main.SubLightPos = Index\n        SetMenuOptionValueST(SubLightModeList[Index])\n",
         "OnOptionSliderOpen": "",
         "OnOptionSliderAccept": "",
         "OnOptionKeyMapChange": ""
@@ -643,7 +643,7 @@
         "OnOptionSelect": "",
         "OnOptionHighlight": "SetInfoText(\"Set main actor's light's brightness\")\n",
         "OnOptionMenuOpen": "SetMenuDialogOptions(DomLightBrightList)\n",
-        "OnOptionMenuAccept": "Main.DomLightBrightness = Index\n        SetMenuOptionValue(Option, DomLightBrightList[Index])\n",
+        "OnOptionMenuAccept": "Main.DomLightBrightness = Index\n        SetMenuOptionValueST(DomLightBrightList[Index])\n",
         "OnOptionSliderOpen": "",
         "OnOptionSliderAccept": "",
         "OnOptionKeyMapChange": ""
@@ -654,7 +654,7 @@
         "OnOptionSelect": "",
         "OnOptionHighlight": "SetInfoText(\"Set second actor's light's brightness\")\n",
         "OnOptionMenuOpen": "SetMenuDialogOptions(SubLightBrightList)\n",
-        "OnOptionMenuAccept": "Main.SubLightBrightness = Index\n        SetMenuOptionValue(Option, SubLightBrightList[Index])\n",
+        "OnOptionMenuAccept": "Main.SubLightBrightness = Index\n        SetMenuOptionValueST(SubLightBrightList[Index])\n",
         "OnOptionSliderOpen": "",
         "OnOptionSliderAccept": "",
         "OnOptionKeyMapChange": ""

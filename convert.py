@@ -56,6 +56,11 @@ def get_data(poolname, ret):
                 content[x] = content[x].replace("SetToggleOptionValue", "SetToggleOptionValueST")
                 myIndex = content[x].find(")")
                 content[x] = content[x][:myIndex] + ", False, " + "\"{}\"".format(statename) + content[x][myIndex:]
+            if "SetMenuOptionValue" in content[x]:
+                content[x] = content[x].replace("SetMenuOptionValue(Option, ", "SetMenuOptionValueST(")
+            if "SetSliderOptionValue" in content[x]:
+                content[x] = content[x].replace("SetSliderOptionValue(Option, ", "SetSliderOptionValueST(")
+                
         codeblock = "".join(map((str), content))
         mycount = codeblock.count("\n")
         codeblock = codeblock.replace("\n", "\n        ", mycount - 1)
@@ -120,20 +125,20 @@ for key in data:
         myState = ("{}{}{}{}".format(state1, select, highlight, state2))
 
     if OnOptionMenuOpen:
-        state1 = "state {}\n".format(statename)
-        state2 = "\nendstate\n"
-        openMenu = buildEvent("OnMenuOpenST", OnOptionMenuOpen)
-        acceptMenu = buildEvent("OnMenuAcceptST", OnOptionMenuAccept)
-        highlight = buildEvent("OnHighlightST", OnOptionHighlight)
-        myState = ("{}{}{}{}{}".format(state1, select, acceptMenu, highlight, state2))
+        Menu_state1 = "state {}\n".format(statename)
+        Menu_state2 = "\nendstate\n"
+        Menu_openMenu = buildEvent("OnMenuOpenST", OnOptionMenuOpen)
+        Menu_acceptMenu = buildEvent("OnMenuAcceptST", OnOptionMenuAccept)
+        Menu_highlight = buildEvent("OnHighlightST", OnOptionHighlight)
+        myState = ("{}{}{}{}{}".format(Menu_state1, Menu_openMenu, Menu_acceptMenu, Menu_highlight, Menu_state2))
 
     if OnOptionSliderOpen:
-        state1 = "state {}\n".format(statename)
-        state2 = "\nendstate\n"
-        openMenu = buildEvent("OnSliderOpenST", OnOptionSliderOpen)
-        acceptMenu = buildEvent("OnSliderAcceptST", OnOptionSliderAccept)
-        highlight = buildEvent("OnHighlightST", OnOptionHighlight)
-        myState = ("{}{}{}{}{}".format(state1, openMenu, acceptMenu, highlight, state2))
+        Slider_state1 = "state {}\n".format(statename)
+        Slider_state2 = "\nendstate\n"
+        Slider_openMenu = buildEvent("OnSliderOpenST", OnOptionSliderOpen)
+        Slider_acceptMenu = buildEvent("OnSliderAcceptST", OnOptionSliderAccept)
+        Slider_highlight = buildEvent("OnHighlightST", OnOptionHighlight)
+        myState = ("{}{}{}{}{}".format(Slider_state1, Slider_openMenu, Slider_acceptMenu, Slider_highlight, Slider_state2))
 
     outData1 += AddOption + "\n"
     outData2 += myState + "\n"
