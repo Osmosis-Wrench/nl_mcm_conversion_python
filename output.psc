@@ -14,30 +14,36 @@ AddToggleOptionST("setUseScreenShake", "Use extra screenshake", Main.UseScreenSh
 AddToggleOptionST("setForceFirstPerson", "Force return to first person after scene", Main.ForceFirstPersonAfter)
 AddToggleOptionST("setScaling", "Disable scaling", Main.DisableScaling)
 AddToggleOptionST("setResetPosition", "Reset position after scene", Main.ResetPosAfterSceneEnd) 		
+
 AddToggleOptionST("setOnlyGayAnimsInGayScenes", "Only use same sex animations for same sex scenes", Main.OnlyGayAnimsInGayScenes)
 AddToggleOptionST("setPlayerAlwaysDomStraight", "Player Always Dom: Straight", Main.PlayerAlwaysDomStraight)
 AddToggleOptionST("setPlayerAlwaysSubStraight", "Player Always Sub: Straight", Main.PlayerAlwaysSubStraight)
 AddToggleOptionST("setPlayerAlwaysDomGay", "Player Always Dom: Gay", Main.PlayerAlwaysDomGay)
 AddToggleOptionST("setPlayerAlwaysSubGay", "Player Always Sub: Gay", Main.PlayerAlwaysSubGay)
+
 AddToggleOptionST("setEndOnOrgasm", "End sex after Dom actor orgasm", Main.EndOnDomOrgasm)
 AddToggleOptionST("setEndOnSubOrgasm", "End sex after Sub actor orgasm", Main.EndOnSubOrgasm)
 AddToggleOptionST("setEndOnBothOrgasm", "Require both actors to orgasm to end", Main.RequireBothOrgasmsToFinish)
 AddToggleOptionST("setSlowMoOrgasms", "Slow motion on orgasm", Main.SlowMoOnOrgasm)
 AddToggleOptionST("setOrgasmBoostsRel", "Orgasm boosts relationship rank", Main.OrgasmIncreasesRelationship)
+
 AddToggleOptionST("setEnableBeds", "Use beds", Main.UseBed)
 AddSliderOptionST("setBedSearchDistance", "Bed search radius", Main.BedSearchDistance, "{0} meters")
 AddSliderOptionST("setBedReallignment", "Bed realignment", Main.BedReallignment, "{0} units")
 AddToggleOptionST("setBedAlgo", "Use alternate bed search method", Main.UseAlternateBedSearch)
+
 AddToggleOptionST("setDomBar", "Main actor HUD bar", Main.EnableDomBar)
 AddToggleOptionST("setSubBar", "Second actor HUD bar", Main.EnableSubBar)
 AddToggleOptionST("setThirdBar", "Third actor HUD bar", Main.EnableThirdBar)
 AddToggleOptionST("setAutoHideBar", "Autohide bars", Main.AutoHideBars)
 AddToggleOptionST("setMatchColorToGender", "Match color to gender", Main.MatchBarColorToGender)
 AddToggleOptionST("setHideNPCOnNPCBars", "Hide bars in NPC-only scenes", Main.HideBarsInNPCScenes)
+
 AddTextOptionST("setResetState", "Reset thread state", "")
 AddTextOptionST("setRebuildDatabase", "Rebuild animation database", "")
 AddTextOptionST("setUpdate", "Update OStim", "")
 AddToggleOptionST("setMute", "Mute vanilla OSA sounds", Main.MuteOSA)
+
 AddToggleOptionST("setAlwaysUndressAtStart", "Fully undress at start", Main.AlwaysUndressAtAnimStart)
 AddToggleOptionST("setUndressIfneed", "Remove clothes mid-scene", Main.AutoUndressIfNeeded)
 AddToggleOptionST("setDropClothes", "Toss clothes onto ground", Main.TossClothesOntoGround)
@@ -48,20 +54,24 @@ AddToggleOptionST("setForceAIIfAttacked", "Force full-auto control if player is 
 AddToggleOptionST("setForceAIInConsensualScenes", "Force full-auto control in consensual scenes", Main.UseAINonAggressive)
 AddToggleOptionST("setUseAutoFades", "Fade out in between animation transitions", Main.UseAutoFades)
 AddSliderOptionST("setAIChangeChance", "AI Animation Change Chance", Main.AiSwitchChance, "{0}")
+
 AddToggleOptionST("setUseFreeCam", "Switch to freecam mode on start", Main.UseFreeCam)
 AddSliderOptionST("setFreeCamFOV", "Freecam FOV", Main.FreecamFOV, "{0}")
 AddSliderOptionST("setDefaultFOV", "Default FOV", Main.DefaultFOV, "{0}")
 AddSliderOptionST("setCameraSpeed", "Camera speed", Main.FreecamSpeed, "{0}")
+
 AddKeyMapOptionST("setKeymap", "Start sex with target", Main.KeyMap)
 AddKeyMapOptionST("setKeyUp", "Increase speed", Main.SpeedUpKey)
 AddKeyMapOptionST("setKeyDown", "Decrease speed", Main.SpeedDownKey)
 AddKeyMapOptionST("setPullOut", "Pull out", Main.PullOutKey)
 AddKeyMapOptionST("setControlToggle", "Switch control mode", Main.ControlToggleKey)
+
 AddMenuOptionST("setDomLightMode", "Main actor light mode", DomLightModeList[Main.DomLightPos])
 AddMenuOptionST("setSubLightMode", "Second actor light mode", SubLightModeList[Main.SubLightPos])
 AddMenuOptionST("setDomLightBrightness", "Main actor light brightness", DomLightBrightList[Main.DomLightBrightness])
 AddMenuOptionST("setSubLightBrightness", "Second actor light brightness", SubLightBrightList[Main.SubLightBrightness])
 AddToggleOptionST("setOnlyLightInDark", "Only use lights in darkness", Main.LowLightLevelLightsOnly)
+
 AddTextOptionST("exportSettings", "Export Settings", "Done")
 AddTextOptionST("importSettings", "Import Settings", "Done")
 
